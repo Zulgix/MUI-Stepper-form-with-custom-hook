@@ -29,8 +29,7 @@ function MyStepper() {
   return (
     <Grid container direction="column">
       <form>
-        <Stepper activeStep={activeStep} orientation="vertical">
-          <Step>
+        <Stepper activeStep={activeStep} orientation="vertical"> <Step>
             <Grid item>
               <StepLabel>First</StepLabel>
               <StepContent>

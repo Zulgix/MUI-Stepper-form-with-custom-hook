@@ -29,7 +29,7 @@ const Pets = [
 ];
 
 function SecondStep({ nextStep }) {
-  const [pets, setPets] = React.useState("EUR");
+  const [pets, setPets] = React.useState("");
   const dispatch = useDispatch();
   const petsInfo = useSelector((state) => state.form.petInfo);
 
