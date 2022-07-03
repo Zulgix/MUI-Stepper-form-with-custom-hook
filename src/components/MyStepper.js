@@ -29,7 +29,8 @@ function MyStepper() {
   return (
     <Grid container direction="column">
       <form>
-        <Stepper activeStep={activeStep} orientation="vertical"> <Step>
+        <Stepper activeStep={activeStep} orientation="vertical"> 
+          <Step key={1}>
             <Grid item>
               <StepLabel>First</StepLabel>
               <StepContent>
@@ -38,7 +39,7 @@ function MyStepper() {
               <Grid container></Grid>
             </Grid>
           </Step>
-          <Step>
+          <Step key={2}>
             <Grid item>
               <StepLabel>Second</StepLabel>
               <StepContent>
@@ -46,7 +47,7 @@ function MyStepper() {
               </StepContent>
             </Grid>
           </Step>
-          <Step>
+          <Step key={3}>
             <Grid item>
               <StepLabel>Third</StepLabel>
               <StepContent>
